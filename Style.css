@@ -32,16 +32,15 @@ body {
 	margin-left:60px;
    
 }
-	.header a:active{
-		background-color: rgb(214, 214, 194);
-	}
-
 #header-menu {
 	float: right;
 	width: auto;
 	/* margin: 3.7% 10% 0px 0px; */
 }
 
+#header-menu ul li a:hover{
+	background-color: rgb(214, 214, 194);
+}
 .header ul li a {
 	color: white;
 	font-size: 16px;
@@ -337,7 +336,7 @@ legend{
 	display: inline;
 }
 
-i{
+#header-menu i{
 	margin-right: 4px;
 	color:white;
 }

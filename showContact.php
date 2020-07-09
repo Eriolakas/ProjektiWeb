@@ -16,7 +16,7 @@ require 'C:/xampp/htdocs/ProjektiWeb_ArbeseMusliu/controllers/contactController.
                      <a href="adminPosts.php"><i class='fas fa-users'></i>Posts</a>
                      <a href="showContact.php"><i class='far fa-address-card'></i></i>User Contacts</a>
                      <a href="adminServices.php"><i class='far fa-clipboard'></i>Services</a></div></div></li>
-	              <li><i class="fa fa-sitemap"></i><a href="home.php">LIVE SITE</a></li>
+	              <li><i class="fa fa-sitemap"></i><a href="index.php">LIVE SITE</a></li>
        
               <?php
 		        if(isset($_SESSION['logged_in']) )
@@ -36,7 +36,7 @@ if(isset($_POST)){
 ?>
 
 <html>
-<title>Show Contacts - Konnect Media</title>
+<title>Contacts - Konnect Media</title>
     <link rel="stylesheet" type="text/css" href="Style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>

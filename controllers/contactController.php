@@ -71,17 +71,17 @@ class contactController
                            {
                               if(!empty($_POST['message']))
                               {
-        
+                                 $employeed = implode(',',$_POST['employeed']);
                                             $query = $this->db->pdo->prepare('INSERT INTO contact(name, email, gender, employeed, country, subject, message)
                                             VALUES (:name, :email, :gender, :employeed, :country, :subject, :message)');
                                             $query->bindParam(':name', $request['name']);
                                             $query->bindParam(':email', $request['email']);
                                             $query->bindParam(':gender', $request['gender']);
-                                            $query->bindParam(':employeed', $request['employeed']);
+                                            $query->bindParam(':employeed', $employeed);
                                             $query->bindParam(':country', $request['country']);
                                             $query->bindParam(':subject', $request['subject']);
-                                           $query->bindParam(':message', $request['message']);
-                                                  if($query->execute())
+                                            $query->bindParam(':message', $request['message']);
+                                               if($query->execute())
 							                             {
 								                             echo '<script type="text/javascript">window.alert("You succesfully regristred a contact!")</script>';
 								                             header( "refresh:0; url=contact.php" );

@@ -75,7 +75,6 @@ class servicesController
                    $query->bindParam(':icon', $request['icon']);
                    $query->bindParam(':content', $request['content']);
                    $query->bindParam(':services_author', $request['services_author']);
-                   // return header('Location: services.php');
               if($query->execute())
 							{
 								echo '<script type="text/javascript">window.alert("You succesfully post a services!")</script>';

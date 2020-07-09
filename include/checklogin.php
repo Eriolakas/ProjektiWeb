@@ -29,7 +29,7 @@
 
 		if($_SESSION['role']==2)
 		{
-		  header( 'Location: ../home.php' );
+		  header( 'Location: ../index.php' );
 		}else{
 			header('Location:../adminPage.php');
 			
