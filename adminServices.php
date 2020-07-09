@@ -15,7 +15,7 @@
         <a href="Home.html"> <img src="img/konnect-media.png"></a>
           <ul id="header-menu">
              <li><i class='far fa-list-alt'></i><a href="adminPage.php">MY DASHBOARD</a></li>
-			       <li><i class='fas fa-user-lock'></i></i><div class="dropdown"><button class="dropbtn"><a href="#">Manage</a></button>
+			       <li><i class='far fa-images'></i><div class="dropdown"><button class="dropbtn"><a href="#">USER</a></button>
                      <div class="dropdown-content">
                      <a href="include/show_signup.php"><i class='fas fa-users'></i>Show Users</a> 
                      <a href="adminPosts.php"><i class='fas fa-users'></i>Posts</a>
