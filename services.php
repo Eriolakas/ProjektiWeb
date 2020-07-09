@@ -20,7 +20,8 @@
 <?php
 if(isset($_SESSION['logged_in']) )
 {
-    ?>  <div id="serviceTitle">
+    ?>  
+        <div id="serviceTitle">
             <h1>Our Marketing Services</h1>
             <h3>***************************</h3>
         </div>
@@ -46,8 +47,8 @@ if(isset($_SESSION['logged_in']) )
 		<?php
 	}
 }else{
-		  echo 'You should be signed in if you want to read post in this page!';
-	  }
+		   echo 'You should be signed in if you want to read post in this page!';
+	   }
 	?>
     <?php
 	    include('include/footer.php');
@@ -67,6 +68,7 @@ if(isset($_SESSION['logged_in']) )
                 header.classList.remove("sticky"); // edhe me hjek sticky kur na sbojm scroll me ta kthy nvend prap qysh je kon
               }
             }
-            </script>
+          </script>
+
     </body>
 </html>

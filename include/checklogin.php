@@ -21,11 +21,11 @@
 	if($count==1)
 	{
 
-	    session_start();
-        $_SESSION['logged_in'] = TRUE;
-        $_SESSION['username'] 	= $row['email'];
-		$_SESSION['name'] 	= $row['username'];
-		$_SESSION['role']=$row['role'];
+	  session_start();
+      $_SESSION['logged_in'] = TRUE;
+      $_SESSION['username'] = $row['email'];
+	  $_SESSION['name'] = $row['username'];
+	  $_SESSION['role'] = $row['role'];
 
 		if($_SESSION['role']==2)
 		{

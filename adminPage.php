@@ -13,10 +13,21 @@
    $var="SELECT count(*) FROM posts";
    $result = mysqli_query($conn, $var);
    $postCount=$row = mysqli_fetch_array($result)[0];
+
+   $var="SELECT count(*) FROM services";
+   $result = mysqli_query($conn, $var);
+   $serviceCount=$row = mysqli_fetch_array($result)[0];
+
+   $var="SELECT count(*) FROM contact";
+   $result = mysqli_query($conn, $var);
+   $contactCount=$row = mysqli_fetch_array($result)[0];
+
    $dataPoints = array( 
 	 array("label"=>"Admin", "y"=>$adminCount),
 	 array("label"=>"Simple User", "y"=>$simpleCount),
-	 array("label"=>"Posts", "y"=>$postCount),
+   array("label"=>"Posts", "y"=>$postCount),
+   array("label"=>"Services", "y"=>$serviceCount),
+   array("label"=>"Contact Users", "y"=>$contactCount),
 	)
  
 ?>
@@ -64,7 +75,7 @@
         <a href="Home.html"> <img src="img/konnect-media.png"></a>
           <ul id="header-menu">
              <li><i class='far fa-list-alt'></i><a href="adminPage.php">MY DASHBOARD</a></li>
-			       <li><i class='far fa-images'></i><div class="dropdown"><button class="dropbtn"><a href="#">USER</a></button>
+			       <li><i class='fas fa-user-lock'></i><div class="dropdown"><button class="dropbtn"><a href="#">Manage</a></button>
                      <div class="dropdown-content">
                      <a href="include/show_signup.php"><i class='fas fa-users'></i>Show Users</a> 
                      <a href="adminPosts.php"><i class='fas fa-users'></i>Posts</a>
@@ -94,7 +105,7 @@
 </div>
 	 
 
-	<div id="chartContainer" style="float:center; height: 400px; width: 100%;">
+	<div id="chartContainer">
     </div>
       <script src="canvasjs.min.js"></script>
 <?php

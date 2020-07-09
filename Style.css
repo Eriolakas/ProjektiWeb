@@ -692,8 +692,9 @@ hr{
 	width: 1200px;
     height: 210px;
     margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: rgb(179, 204, 204);
+	margin-bottom: 60px;
+	border: 4px solid black;
+    background-color: rgb(242, 255, 204);
     border-radius: 10px;
 }
 #welcomeAdmin img{
@@ -709,8 +710,16 @@ hr{
 #adminPermbajtja{
 	background-color: rgb(242, 230, 255);
 }
+#chartContainer{
+	float:center;
+	height: 400px;
+    width: 100%;
+}
 
  /*************** Services ************/
+ #con{
+	 margin-top: 40px;
+ }
 .ser{
 	float: left; 
 	border: 1px solid brown;
